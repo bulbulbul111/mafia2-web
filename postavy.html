@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postavy &amp; Anketa | Mafia II</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">MAFIA <span>II</span></a>
+            <nav class="main-nav">
+                <a href="index.html">Úvod &amp; Příběh</a>
+                <a href="postavy.html" class="active">Postavy &amp; Anketa</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1>Hlavní postavy Empire Bay</h1>
+            <p class="section-desc">Klíčové osobnosti, které určovaly osud Vita Scaletty v podsvětí.</p>
+
+            <div class="grid-2">
+                <article class="card character-card">
+                    <img src="vito.jpg" alt="Vito Scaletta" class="char-img" onerror="this.style.display='none'">
+                    <span class="badge">Hlavní hrdina</span>
+                    <h3>Vito Scaletta</h3>
+                    <p class="actor">Český dabing: Martin Trnavský</p>
+                    <p>
+                        Syn sicilských přistěhovalců, který se po návratu z druhé světové války snaží splatit 
+                        otcovy dluhy. Společně s Joem postupně stoupá v hierarchii mafiánské rodiny Clemente a Falcone.
+                    </p>
+                </article>
+
+                <article class="card character-card">
+                    <img src="joe.jpg" alt="Joe Barbaro" class="char-img" onerror="this.style.display='none'">
+                    <span class="badge">Nejlepší přítel</span>
+                    <h3>Joe Barbaro</h3>
+                    <p class="actor">Český dabing: Vlastimil Zavřel</p>
+                    <p>
+                        Vitův nerozlučný kamarád z dětství. Impulzivní, hlučný milovník rychlých aut, drahých obleků 
+                        a dobrého jídla, který Vita přivedl do světa organizovaného zločinu.
+                    </p>
+                </article>
+
+                <article class="card character-card">
+                    <img src="henry.jpg" alt="Henry Tomasino" class="char-img" onerror="this.style.display='none'">
+                    <span class="badge">Spojenec</span>
+                    <h3>Henry Tomasino</h3>
+                    <p class="actor">Český dabing: Jan Šťastný</p>
+                    <p>
+                        Klidný, profesionální a rozvážný mafián, který zprostředkuje Vitovi a Joeovi ty nejvýnosnější 
+                        zakázky v Empire Bay.
+                    </p>
+                </article>
+
+                <article class="card character-card">
+                    <img src="leo.jpg" alt="Leo Galante" class="char-img" onerror="this.style.display='none'">
+                    <span class="badge">Mentor</span>
+                    <h3>Leo Galante</h3>
+                    <p class="actor">Český dabing: Dalimil Klapka</p>
+                    <p>
+                        Zkušený consigliere rodiny Vinci. Ve vězení se stane Vitovým rádcem a později mu 
+                        několikrát zachrání život.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card form-card">
+                <h2>Fanouškovská anketa</h2>
+                <p>Napiš nám, která postava nebo mise z Mafie II je tvoje nejoblíbenější.</p>
+
+                <form id="fan-form" novalidate>
+                    <div class="form-group">
+                        <label for="username">Tvoje jméno nebo přezdívka *</label>
+                        <input type="text" id="username" name="username" placeholder="Např. Tommy Angelo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="favorite">Oblíbená postava</label>
+                        <select id="favorite" name="favorite">
+                            <option value="Vito Scaletta">Vito Scaletta</option>
+                            <option value="Joe Barbaro">Joe Barbaro</option>
+                            <option value="Henry Tomasino">Henry Tomasino</option>
+                            <option value="Leo Galante">Leo Galante</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Oblíbená mise nebo komentář *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Napiš pár slov o hře..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Odeslat odpověď</button>
+                </form>
+
+                <div id="form-feedback" class="feedback" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Studentský zápočtový projekt • Základy informačních technologií (VŠB-TUO)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

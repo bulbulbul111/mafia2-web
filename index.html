@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia II – Empire Bay | Fanouškovský web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">MAFIA <span>II</span></a>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Úvod &amp; Příběh</a>
+                <a href="postavy.html">Postavy &amp; Anketa</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <p class="subtitle">Empire Bay • 1945–1951</p>
+            <h1>Vítejte v Empire Bay</h1>
+            <p class="hero-text">
+                Kultovní česká akční adventura od studia 2K Czech. Příběh o přátelství, zradě 
+                a ceně za americký sen v poválečné Americe.
+            </p>
+            <div class="hero-buttons">
+                <a href="postavy.html" class="btn">Prozkoumat postavy</a>
+                <button id="zapocet-btn" class="btn btn-outline">Získat zápočet</button>
+            </div>
+
+            <div id="zapocet-box" class="zapocet-alert" aria-live="polite">
+                <p class="zapocet-quote">„Promiň, mladej, zápočet nebyl součástí dohody.“</p>
+                <span class="zapocet-author">— Leo Galante</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="section">
+            <h2>O hře a atmosféře</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <img src="empire.jpg" alt="Atmosféra města Empire Bay ve hře Mafia II" class="card-img" onerror="this.style.display='none'">
+                    <h3>Český klenot herní historie</h3>
+                    <p>
+                        Mafia II vyšla v roce 2010 a navázala na legendární první díl. Vývojáři z Brna a Prahy 
+                        vytvořili fiktivní americké velkoměsto Empire Bay, inspirované New Yorkem, Chicagem a San Franciscem.
+                    </p>
+                    <p>
+                        Hra vyniká filmovým vyprávěním, dobovou hudbou z 40. a 50. let, realistickým jízdním modelem 
+                        a nezapomenutelným českým dabingem v čele s Markem Vašutem a Petrem Rychlým.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="cars.jpg" alt="Dobová auta v Empire Bay" class="card-img" onerror="this.style.display='none'">
+                    <h3>Základní fakta</h3>
+                    <ul class="fact-list">
+                        <li><strong>Vývojář:</strong> 2K Czech</li>
+                        <li><strong>Rok vydání:</strong> 2010</li>
+                        <li><strong>Hlavní hrdina:</strong> Vito Scaletta</li>
+                        <li><strong>Město:</strong> Empire Bay (rozloha cca 26 km²)</li>
+                        <li><strong>Herní engine:</strong> Illusion Engine</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section quote-box">
+            <h2>Kultovní hlášky ze hry</h2>
+            <p class="quote-intro">Klikni na tlačítko a připomeň si legendární české hlášky z Empire Bay:</p>
+            <blockquote id="quote-display">
+                „Víš, co se říká o chlapovi, co tahá nůž do přestřelky...“ — Joe Barbaro
+            </blockquote>
+            <button id="new-quote-btn" class="btn">Další hláška</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Studentský zápočtový projekt • Základy informačních technologií (VŠB-TUO)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
